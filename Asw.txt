@@ -79,14 +79,42 @@ Git Bash--commands
 
 
 
+==============================================================================================================
+S3 --> Simple Storage Service|| TO CREATE S3 
+==============================================================================================================
+
+1. ASW console-> search S3 -> select [create Bucket] ---> Bucket name(Globally unique name only lower case alpha)
+   ->AWS Region(Any free trail region)->Click on ACLs disabled->{untick} for Block all public access->{tick} I acknowledge
+   ->[create bucket]
+   
+2. click on created bucket name--->permissions->Bucket policy->Edit
+
+3.Bucket policy
+a.copy code from crome
+  google->ASW S3 policy for public access->S3->copy code->paste code on policy and change bucket name->save changes
+  (it will make permission overview access private to public)
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Stmt1405592139000",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": [
+                "arn:aws:s3:::bucketname/*",
+                "arn:aws:s3:::bucketname"
+            ]
+        }
+    ]
+}
 
 
 
-
-
-
-
-
+b.Policy generator
+  click->Policy generator--->AWS Policy Generator->Select Type of Policy(S3 bucket policy)->Principal(*)->Actions(All Actions/get object)
+  ->Amazon Resource Name (ARN)(arn:aws:s3:::<bucket name>)->Add Statement->Generate Policy->copy code and paste code on policy->save changes. 
 
 
 
