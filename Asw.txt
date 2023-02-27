@@ -1,0 +1,105 @@
+NewComputer--->newkey.pme-->JrQeAsI?ATlvmkOpNSkO?a1lo2iT)AP6
+User name
+ Administrator
+
+Public DNS
+ ec2-3-108-194-48.ap-south-
+
+
+MyComputer---->new windows.pme--->ai1w45*EzlODyK!4-YXF(26c*QKF$D(r
+User name
+ Administrator
+
+Public DNS
+ ec2-43-204-142-5.ap-south-
+
+
+==============================================================================================================
+TO CREATE SSH KEY
+==============================================================================================================
+1. Login to github 
+2. click on profile photo on top right corner, go to settings
+3. go to SSH and GPG keys, in SSH keys go to generating SSH keys.
+4. click Generationg a new SSH key and adding it to the ssh-agent-->Generating a new SSH key-->2.copy link
+5. Open Git Bash-->Paste the copyed link, substituting in your GitHub email address. click enter->4times
+6. in git bash your public key path will be visible-->go to that given path and open .pub file in Notpad and
+    copy key
+7. again go to git hub, click on profile photo on top right corner, go to settings
+8. go to SSH and GPG keys, in SSH keys click New SSH keys.
+9. SSH keys/ Add new ->Title <any title>  key<paste key>->Add SSH key
+
+===============================================================================================================
+       GITBASH
+===============================================================================================================
+To link gitbash to github
+
+git config --global user.name "<username>"
+git config --global user.name "ShashidharV26"
+
+git config --global user.email "My_NAME@example.com"
+git config --global user.email "shashidhar.vshashi@gmail.com"
+
+===============================================================================================================
+TO CREATE LOCAL REPO
+===============================================================================================================
+1.create one remote repo in the github
+2.go to code and copy SSH link
+3.create one separate folder wherever and open gitbash in that folder 
+4.use command {git clone <paste link>}
+5.enter
+6.it will create local repo for that remote repo
+7.whenever we want to make any changes in that remote repo we must open gitbash in same folder, all the data 
+  present in that remote repo is folder is local repo
+
+
+==============================================================================================================
+Git Bash--commands
+==============================================================================================================
+1. git clone--->It is a command used to create a copy of a remote Git repository on a local machine.
+
+2. git pull--->to get update from remote repo
+             ->will first fetch the latest changes from the remote repository that your local repository is 
+               tracking. This command will download any new commits or files that have been added to the remote 
+               repository since your last synchronization.(if any changes made in remote repo it will added to 
+               local repo)
+
+3. git add--->it is a Git command used to stage changes to be committed to the remote repository. When you make 
+              changes to files in your local Git repository.
+(a)git add -A & git add * ---> both are used to push everything present in local repo to remote repo
+(b)git add <fileName> ---> it only push specified file by fileName.
+
+4. git commit -m "<message>" -->it is used to show what changes made in local repo when we open remot repo.
+                             -->it is used after git add command and writing message what are the changes.
+
+5. git push --> after git commit final step to push changed things to remote repo we use git push command.
+
+6. git status ---> it is used to check the status of the local repo where it will show any thing new changes made in 
+                   local repo which where not pushed to remote repo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
