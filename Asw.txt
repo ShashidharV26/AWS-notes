@@ -117,7 +117,12 @@ b.Policy generator
   ->Amazon Resource Name (ARN)(arn:aws:s3:::<bucket name>)->Add Statement->Generate Policy->copy code and paste code on policy->save changes. 
 
 
-
+4.Upload files on S3
+  ->click on created s3 name->go to objects->[upload]--->[add files](the file which you want to host eg:-index.html, these file must be in direct uplode)
+  [add folder](remaining all related files)->[upload]--->properties--->Static website hosting->[Edit]--->Edit static website hosting->tick Enable->
+  Index document(the front page which we want to host)->Error document(if that get error then this file is visible)->[save changes]
+  --->properties->copy link on Static website hosting-Bucket website endpoint-->paste that link on any crome then you get that file on any where.
+  if you not found then nothing to worry callme 6361662695 or text me 8197651400
 
 
 
