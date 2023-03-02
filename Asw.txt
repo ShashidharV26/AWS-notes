@@ -126,6 +126,39 @@ b.Policy generator
   if you not found then nothing to worry callme 6361662695 or text me 8197651400
 
 
+==============================================================================================================
+RDS --> Relational Database Service || TO CREATE RDS 
+==============================================================================================================
+1. AWS console->search RDS--->[create database]--->Choose a database creation method{tick Standard create}->select database(my sql)->Templates(free tire for 750hr on single AZ)
+   ->Settings-DatabaseName(anyname)-master username(anyname/admin)-Master password(any password)-public access(yes)->[create database](it will take 5 to 10 min to create)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
