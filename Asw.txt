@@ -77,7 +77,28 @@ Git Bash--commands
 6. git status ---> it is used to check the status of the local repo where it will show any thing new changes made in 
                    local repo which where not pushed to remote repo.
 
+**BRANCH**
+In GitHub, a branch is a separate line of development that allows you to work on new features, fix bugs, or make changes 
+to a project without affecting the main or "master" branch.
+When you create a branch in GitHub, it creates a copy of the codebase and allows you to make changes to the code without 
+affecting the main branch. You can then merge the changes you made in the branch back into the main branch through a pull request.
+Branches are useful for collaborating with others on a project, as different team members can work on different branches 
+without interfering with each other's work. They are also helpful for experimenting with new features or changes without affecting 
+the stability of the main codebase
 
+1. git branch <branchName> --->to create a new branch
+
+2. git branch --->to check any existing branches in local repo
+
+3. git checkout <branchName> --->it will change/switch storage location from main to branch
+
+4. git add -A
+
+5. git commit -m "<message>" 
+
+6. git push--->(it will show fatal/error, it will generate one git push command)
+   ->git push --set-upstream orign super (copy it and paste to console and enter,it will store the data into the branch)
+            
 
 
 ==============================================================================================================
@@ -124,6 +145,53 @@ b.Policy generator
   Index document(the front page which we want to host)->Error document(if that get error then this file is visible)->[save changes]
   --->properties->copy link on Static website hosting-Bucket website endpoint-->paste that link on any crome then you get that file on any where.
   if you not found then nothing to worry callme 6361662695 or text me 8197651400
+
+******************************[AFTER CREATING DELETE S3 AT THE END OF THE DAY]**********************************
+
+==============================================================================================================
+RDS --> Relational Database Service || TO CREATE RDS 
+==============================================================================================================
+1. AWS console->search RDS--->[create database]--->Choose a database creation method{tick Standard create}->select database(my sql)->Templates(free tire for 750hr on single AZ)
+   ->Settings-DatabaseName(anyname)-master username(anyname/admin)-Master password(any password)-public access(yes)->[create database](it will take 5 to 10 min to create)
+
+
+2. After creation of database click on database name--->go to security-VPC security groups-click on default link
+   --->Inbound rules->[edit inbound rules]--->if any rules are there except All trafic delete them and click [Add rules]
+   1->custom tcp -->Port range(3306)-->Source(IPv4)
+   2->custom tcp -->Port range(3306)-->Source(IPv6)
+    ->[Save rules]
+   --->Outbound rules->[edit Outbound rules]--->if any rules are there except All trafic delete them and click [Add rules]
+   1->custom tcp -->Port range(3306)-->Source(IPv4)
+   2->custom tcp -->Port range(3306)-->Source(IPv6)
+    ->[Save rules]
+
+3. To connect with MySQLWorkbeanch
+   click on database name-Connectivity & security-Endpoint & port-copy endpoint link.
+   ->open MySQLWorkbeanch on windows on MySQL connections click(+)->connection Name(any name for database)-Hostname(paste the endpoint link here)-Username(enter username i.e, masterUsername)
+     -Test Connection-it will ask password(Master password)-ok-Succefully you created database.
+ 
+******************************[AFTER CREATING DELETE RDS AT THE END OF THE DAY]**********************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
