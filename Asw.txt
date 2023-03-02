@@ -169,6 +169,9 @@ RDS --> Relational Database Service || TO CREATE RDS
    click on database name-Connectivity & security-Endpoint & port-copy endpoint link.
    ->open MySQLWorkbeanch on windows on MySQL connections click(+)->connection Name(any name for database)-Hostname(paste the endpoint link here)-Username(enter username i.e, masterUsername)
      -Test Connection-it will ask password(Master password)-ok-Succefully you created database.
+
+4. To delete RDS
+   select database name-go to [Actions]-delete-type delete me.
  
 ******************************[AFTER CREATING DELETE RDS AT THE END OF THE DAY]**********************************
 
