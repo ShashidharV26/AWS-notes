@@ -13,6 +13,7 @@ User name
 Public DNS
  ec2-43-204-142-5.ap-south-
 
+newinstace ---> newinstance.pme--->xKyB(O$gtc7HMf.Y6x7tAwZTH@@a-1DZ
 
 ==============================================================================================================
 TO CREATE SSH KEY
