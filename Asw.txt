@@ -169,12 +169,20 @@ RDS --> Relational Database Service || TO CREATE RDS
    click on database name-Connectivity & security-Endpoint & port-copy endpoint link.
    ->open MySQLWorkbeanch on windows on MySQL connections click(+)->connection Name(any name for database)-Hostname(paste the endpoint link here)-Username(enter username i.e, masterUsername)
      -Test Connection-it will ask password(Master password)-ok-Succefully you created database.
+
+4. To delete RDS
+   select database name-go to [Actions]-delete-type delete me.
  
 ******************************[AFTER CREATING DELETE RDS AT THE END OF THE DAY]**********************************
+===================================================================================================================================================================================
+TO CREATE DynamoDB
+=================================================================================================================================================================================
+1.AWS console->search DynamoDb--->Dashboard->[Create table]--->Table details->table name(anyname)-Partition key(primary key)-Sort key(optional/two columns can combine form primary key)->[Create table]
+(Partition key+sort key=composite key-->combination of two or more columns behaving like primary key to retrive the data is known as composite key)
 
+2.DynamoDB->Tables->click on table name->Explore table items--->scan-create item(it is used to add the data into the table)--->Query-filters(it is used to featch the data).
 
-
-
+=====================================================================================================================================================================================
 
 
 
