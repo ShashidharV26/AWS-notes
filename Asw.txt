@@ -183,33 +183,21 @@ TO CREATE DynamoDB
 2.DynamoDB->Tables->click on table name->Explore table items--->scan-create item(it is used to add the data into the table)--->Query-filters(it is used to featch the data).
 
 =====================================================================================================================================================================================
+TO CREATE ALARM WITH CLOUDWATCH AND SNS(Simple Notification Serives)
+==================================================================================================================================================================================
+1. AWS console->search SNS--->click on Simple Notification Serive---->go to Topics--->[Create topic]--->Details-Type(select Standard)-Name(any name)-Display name(anyname)--->[Create topic]
 
+2. Apply for Subscription
+AWS console->search SNS--->click on Simple Notification Serive---->go to Subscriptions--->[Create subscription]--->Details-Topic ARN(select SNS you created)-Protocol(select Email/SMS)-Endpoint(give mailId where you get notification)-[Create subscription]
+(after creation of subscription go to gmail and conform subscription)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+3. Create Alarm
+AWS console->search CloudWatch(click)--->go to Metrics-All metrics-Browse-(search for cpuutilization)-select EC2>Pre-Instance Metrics--->(select any one instance which you want set alarm)-(after selection of instance go to Graphed metrics)-under Actions select alarm icon--->
+step1-Specify metric and conditions-period(set time period for checking set 1 min to know how working)-Conditions-select threshold(lower - value any number(10))->[next]
+step2-Configure actions-select an existing SNS topic-Send a notification to…(select SNS name where which gmail you given for that email notification will go)-EC2 action(select any one action)->[next]
+step3-Name and description-Alarm name(any name it will shown in message)-Alarm description(Add description about notification)-[next]
+step4-Preview and create(check all the details)-[Create alarm]
+(After complition of time period your action on EC2 will be done and you will get a message about your action)
 
 
 
